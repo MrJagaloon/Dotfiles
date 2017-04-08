@@ -1,0 +1,63 @@
+#!/bin/bash
+
+# Install/uninstall the dotfiles found in this scripts current directory and 
+# subdirectories to the current user's home directory using symlinks.
+
+usage()
+{
+    echo "Usage: ./install.sh [-hvD]"
+    echo "Options:"
+    echo "  -h      show this help"
+    echo "  -v      verbose"
+    echo "  -D      uninstall"
+}
+
+UNINSTALL=false
+VERBOSE=false
+DOT_DIR="$HOME/etc"
+
+while getopts hvD opt; do
+    case $opt in
+        h) usage ;;
+        v) VERBOSE=true ;;
+        D) UNINSTALL=true ;;
+    esac
+done
+
+
+dot()
+{
+    if [ -z "$DOT_DIR/$1" ]; then echo "Dotfile not found: $1"
+    elif $UNINSTALL; then 
+        rm "$HOME/$1"
+        if $VERBOSE; then echo "Removed $1 from $HOME"; fi
+    else 
+        ln -sf "$DOT_DIR/$1" "$HOME/$1"
+        if $VERBOSE; then echo "Linked $1 to ~/$1"; fi
+    fi
+}
+
+if $VERBOSE; then
+    if $UNINSTALL; then
+        echo "Unstalling dotfiles in $DOT_DIR from $HOME"
+    else
+        echo "Installing dotfiles in $DOT_DIR to $HOME"
+    fi
+fi
+
+# bash
+dot .bash_profile
+dot .bash_logout
+dot .bashrc
+dot .dircolors
+
+# vim
+dot .vimrc
+
+# X11
+dot .xinitrc
+dot .Xresources
+
+# i3
+dot .i3
+

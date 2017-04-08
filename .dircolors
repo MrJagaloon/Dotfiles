@@ -1,0 +1,311 @@
+
+# file: .dircolors
+# author: Justin Gifford (MrJagaloon)
+
+# Color/attributes are defined by ANSI color codes as follows:
+#
+# COLOR    FG  BG    COLOR          FG  BG     ATTRIBUTE    ##
+# =======  ==  ==    =======        ==  ===    =========    ==
+# black    30  40    dark gray      90  100    none         00
+# red      31  41    light red      91  101    bold/bright  01
+# green    32  42    light green    92  102    underline    04
+# yellow   33  43    light yellow   93  103    blink        05
+# blue     34  44    light blue     94  104    reverse      07
+# magenta  35  45    light magenta  95  105    concealed    08
+# cyan     36  46    light cyan     96  106    
+# white    37  47    white          97  107    
+
+# TERMs {{{ --------------------------------------------------------------------
+TERM Eterm
+TERM ansi
+TERM color-xterm
+TERM con132x25
+TERM con132x30
+TERM con132x43
+TERM con132x60
+TERM con80x25
+TERM con80x28
+TERM con80x30
+TERM con80x43
+TERM con80x50
+TERM con80x60
+TERM console
+TERM cygwin
+TERM dtterm
+TERM gnome
+TERM konsole
+TERM kterm
+TERM linux
+TERM linux-c
+TERM mach-color
+TERM mlterm
+TERM putty
+TERM putty-256color
+TERM rxvt
+TERM rxvt-cygwin
+TERM rxvt-cygwin-native
+TERM rxvt-unicode
+TERM rxvt-unicode-256color
+TERM screen
+TERM screen-256color
+TERM screen-bce
+TERM screen-w
+TERM screen.linux
+TERM vt100
+TERM xterm
+TERM xterm-256color
+TERM xterm-color
+TERM xterm-debian
+# }}}
+# General files {{{ ------------------------------------------------------------
+NORMAL                 00;37     # global default
+FILE                   00;34     # normal file
+RESET                  00;37     # reset to "normal" color
+DIR                    01;34     # directory
+MULTIHARDLINK          00;37     # regular file with more than one link
+FIFO                   00;33     # pipe
+SOCK                   00;35     # socket
+DOOR                   00;35     # door
+BLK                    40;33;01  # block device driver
+CHR                    40;33;01  # character device driver
+ORPHAN                 01;37;41  # orphaned syminks
+MISSING                01;37;41  # ... and the files they point to
+SETUID                 37;41     # file that is setuid (u+s)
+SETGID                 30;43     # file that is setgid (g+s)
+CAPABILITY             30;41     # file with capability
+STICKY_OTHER_WRITABLE  30;42     # dir that is sticky & other-writable (+t,o+w)
+OTHER_WRITABLE         04;34     # dir that is other-writable (o+w) & not sticky
+STICKY                 37;44     # dir that is sticky (+t) & not other-writable
+EXEC                   04;32     # Files with execute permission
+LINK                   target    # symbolic link (set to 'target' to use the 
+                                 # color of the file pointed to.)
+# }}}
+# Archives or compressed {{{
+.tar    04;31
+.tgz    04;31
+.arj    04;31
+.taz    04;31
+.lzh    04;31
+.lzma   04;31
+.tlz    04;31
+.txz    04;31
+.zip    04;31
+.z      04;31
+.Z      04;31
+.dz     04;31
+.gz     04;31
+.lz     04;31
+.xz     04;31
+.bz     04;31
+.bz2    04;31
+.bzip2  04;31
+.tbz    04;31
+.tbz2   04;31
+.tz     04;31
+.deb    04;31
+.rpm    04;31
+.jar    04;31
+.rar    04;31
+.ace    04;31
+.zoo    04;31
+.cpio   04;31
+.7z     04;31
+.rz     04;31
+.apk    04;31
+.gem    04;31
+# }}}
+# image formats {{{
+.jpg    00;35
+.JPG    00;35
+.jpeg   00;35
+.gif    00;35
+.bmp    00;35
+.pbm    00;35
+.pgm    00;35
+.ppm    00;35
+.tga    00;35
+.xbm    00;35
+.xpm    00;35
+.tif    00;35
+.tiff   00;35
+.png    00;35
+.svg    00;35
+.svgz   00;35
+.mng    00;35
+.pcx    00;35
+.dl     00;35
+.xcf    00;35
+.xwd    00;35
+.yuv    00;35
+.cgm    00;35
+.emf    00;35
+.eps    00;35
+.CR2    00;35
+.ico    00;35
+# }}}
+# Document files {{{
+.pdf    00;32
+.ps     00;32
+.txt    00;32
+.html   00;32
+.css    00;32
+.rst    00;32
+.md     00;32
+.patch  00;32
+.diff   00;32
+.tex    00;32
+.xls    00;32
+.xlsx   00;32
+.doc    00;32
+.docx   00;32
+.ppt    00;32
+.pptx   00;32
+.key    00;32
+.ods    00;32
+.odt    00;32
+# }}}
+# Template files {{{
+.pt     01;34 # Zope page template
+.tmpl   01;34
+.in     01;34
+.ots    01;34 # OpenDocument spreadsheet template
+.ott    01;34 # OpenDocument text document template
+# }}}
+# Audio formats {{{
+.aac    00;31
+.au     00;31
+.flac   00;31
+.mid    00;31
+.midi   00;31
+.mka    00;31
+.mp3    00;31
+.mpc    00;31
+.ogg    00;31
+.ra     00;31
+.wav    00;31
+.m4a    00;31
+.axa    00;31
+.oga    00;31
+.spx    00;31
+.xspf   00;31
+# }}}
+# Video formats {{{
+.mov    00;36
+.mpg    00;36
+.mpeg   00;36
+.m2v    00;36
+.mkv    00;36
+.ogm    00;36
+.mp4    00;36
+.m4v    00;36
+.mp4v   00;36
+.vob    00;36
+.qt     00;36
+.nuv    00;36
+.wmv    00;36
+.asf    00;36
+.rm     00;36
+.rmvb   00;36
+.flc    00;36
+.avi    00;36
+.fli    00;36
+.flv    00;36
+.gl     00;36
+.m2ts   00;36
+.divx   00;36
+.webm   00;36
+.axv    00;36
+.anx    00;36
+.ogv    00;36
+.ogx    00;36
+# }}}
+# Config/dot files {{{
+.conf       00;35
+.config     00;35
+.cnf        00;35
+.cfg        00;35
+.ini        00;35
+.properties 00;35
+.yaml       00;35
+.vcl        00;35
+*rc         00;35
+# }}}
+# Source code files {{{
+.c              00;33
+.cpp            00;33
+.py             00;33
+.coffesscript   00;33
+.js             00;33
+.rb             00;33
+.sh             00;33
+.zsh            00;33
+.env            00;33
+.bash           00;33
+.php            00;33
+.java           00;33
+.zcml           00;33
+.pl             00;33
+.lua            00;33
+.clj            00;33
+.cs             00;33
+.fs             00;33
+.fsx            00;33
+.go             00;33
+# }}}
+# Data / database {{{
+.db     04;32
+.sql    04;32
+.json   04;32
+.plist  04;32 # OSX properties
+.xml    04;32
+# }}}
+# Files of special interest {{{
+*.sw*               01;33
+.tex                01;37
+.rdf                01;37
+.owl                01;37
+.n3                 01;37
+.ttl                01;37
+.nt                 01;37
+.torrent            01;37
+.xml                01;37
+*Makefile           01;37
+*makefile           01;37
+*Rakefile           01;37
+*build.xml          01;37
+.nfo                01;37
+*README             01;37
+*README.txt         01;37
+*readme.txt         01;37
+*README.markdown    01;37
+*README.md          01;37
+.cc                 01;37
+# }}}
+# Machine generated files / non-important {{{
+.log        01;30
+.bak        01;30
+.aux        01;30
+.lof        01;30
+.lol        01;30
+.lot        01;30
+.out        01;30
+.toc        01;30
+.bbl        01;30
+.blg        01;30
+*~          01;30
+*#          01;30
+.part       01;30
+.incomplete 01;30
+.swp        01;30
+.tmp        01;30
+.temp       01;30
+.o          01;30
+.obj        01;30
+.pyc        01;30
+.pyo        01;30
+.class      01;30
+.cache      01;30
+.egg-info   01;30
+# }}}
+
+# vim:foldmethod=marker:foldlevel=0
